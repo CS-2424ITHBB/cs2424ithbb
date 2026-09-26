@@ -1,5 +1,4 @@
-# cs2424ithbb
-Cyber Threat Intelligence Project: webcamXP Exposure Analysis and MISP Integration
+# Cyber Threat Intelligence Project: webcamXP Exposure Analysis and MISP Integration
 
 About the Project
 
