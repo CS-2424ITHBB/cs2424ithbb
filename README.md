@@ -94,4 +94,3 @@ Authors
 * Bakhtiyar Karabalin
 * Tulepbergen
 
-Academic project: Cyber Threat Intelligence & OSINT Research.
