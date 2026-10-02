@@ -1,26 +1,19 @@
 Section 4: Comprehensive Cyber Threat Intelligence (CTI) Glossary
 
-To maintain standardization and taxonomic alignment with international frameworks (e.g., NIST SP 800-150, MITRE ATT&CK), the following glossary defines the core terms applicable to this assessment:
+To maintain standardization and taxonomic alignment with international frameworks, the following glossary defines the core terms applicable to this assessment:
 
-1. Cyber Threat Intelligence (CTI): The collection, evaluation, and refinement of telemetry regarding existing or emerging threat vectors, actors, and campaigns to enable proactive, data-driven security decisions.
-2. Indicator of Compromise (IOC): Forensic artifacts or technical data points (e.g., IP addresses, file hashes, malicious domains) that provide high-probability evidence of an active or past network intrusion.
-3. Passive Reconnaissance: The gathering of target infrastructure metadata (e.g., indexed banners, DNS records, public configurations) using third-party sources like Shodan, without generating direct traffic logs on the target system.
-4. Attack Surface: The aggregate total of all internet-facing endpoints, open network ports, exposed software interfaces, and misconfigurations that an adversary can attempt to exploit.
-5. Security Misconfiguration: A vulnerability arising from leaving systems with factory-default parameters, unencrypted communication channels, or disabled access controls.
-6. Data Leakage (Data Exposure): The unauthorized exposure or transmission of private, sensitive, or proprietary data to the public domain without the requirement of an active network intrusion or exploit.
-7. Shodan Dork: A highly tailored search query utilizing specific logical operators and filters (e.g., has_screenshot:true, port:, country:) to extract granular IoT/infrastructure data from the Shodan database.
-8. Threat Actor: An individual, group, or nation-state entity that initiates or participates in malicious cyber activities targeting digital assets.
-9. Attack Vector: The specific path, method, or mechanism used by an adversary to gain unauthorized access to a network or device to deliver a malicious payload.
-10. CVE (Common Vulnerabilities and Exposures): A standardized, publicly accessible catalog of entries for registered cybersecurity vulnerabilities maintained by the MITRE Corporation and NIST.
-11. Exploit-DB: A public, archive-driven database of working exploits and vulnerable software code, frequently utilized by both penetration testers and threat actors.
-12. Banner Grabbing: A reconnaissance technique used to collect textual responses sent by network services (HTTP, FTP, SSH), which often disclose the software name, vendor, and exact version.
-13. Threat Profiling: The analytical process of identifying, categorizing, and mapping the motivations, capabilities, and historical tactics of specific threat actor groups.
-14. Lateral Movement: Techniques used by adversaries after gaining an initial foothold to navigate deeper into an internal network in search of high-value assets.
-15. Tactics, Techniques, and Procedures (TTPs): The behavioral patterns, technical methods, and operational strategies deployed by threat actors to execute cyberattacks.
-16. Deduplication: A data normalization process that eliminates redundant data elements from an OSINT dataset to ensure analytical accuracy and database efficiency.
-17. Strategic Intelligence: High-level CTI designed for non-technical decision-makers, focusing on long-term threat trends, geopolitical motives, and overall risk management.
-18. Operational Intelligence: Technical, real-time CTI providing immediate context about specific, active cyberattacks, campaigns, or newly discovered software vulnerabilities.
-
+Cyber Threat Intelligence (CTI): The collection, evaluation, and refinement of telemetry regarding existing or emerging threat vectors and campaigns to enable proactive, data-driven security decisions.
+Indicator of Compromise (IOC): Forensic artifacts or technical data points (e.g., IP addresses) that provide high-probability evidence of an active or past network intrusion.
+Passive Reconnaissance: The gathering of target infrastructure metadata (e.g., indexed banners, public configurations) using third-party sources like Shodan, without generating direct traffic logs on the target system.
+Attack Surface: The aggregate total of all internet-facing endpoints, open network ports, exposed software interfaces, and misconfigurations that an adversary can attempt to exploit.
+Security Misconfiguration: A vulnerability arising from leaving systems with factory-default parameters, unencrypted communication channels, or disabled access controls.
+Data Leakage (Data Exposure): The unauthorized exposure or transmission of private, sensitive, or proprietary data to the public domain without the requirement of an active network intrusion or exploit.
+Shodan Dork: A highly tailored search query utilizing specific logical operators and filters (e.g., has_screenshot:true) to extract granular IoT/infrastructure data from the Shodan database.
+Attack Vector: The specific path, method, or mechanism used by an adversary to gain unauthorized access to a network or device to deliver a malicious payload.
+CVE (Common Vulnerabilities and Exposures): A standardized, publicly accessible catalog of entries for registered cybersecurity vulnerabilities.
+Banner Grabbing: A reconnaissance technique used to collect textual responses sent by network services (HTTP), which often disclose the software name, vendor, and exact version.
+Lateral Movement: Techniques used by adversaries after gaining an initial foothold to navigate deeper into an internal network in search of high-value assets.
+Deduplication: A data normalization process that eliminates redundant data elements from an OSINT dataset to ensure analytical accuracy and database efficiency.
 Section 5: Granular Threat Classification and Source Profiling
 
 The exposure of webcamXP servers via Shodan generates a vast multi-layered spectrum of risk. Below is an expanded classification of threat categories, technical vectors, and their originating sources.
