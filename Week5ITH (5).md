@@ -52,7 +52,7 @@ sudo docker run -d --name splunk \
 The `splunk` container is running next to the MISP containers:
 
 ================================================================================
-![Figure 1. Running containers: splunk and the MISP stack](<Screens/Снимок_экрана_2026-10-06_223619.png>)
+![Figure 1. Running containers: splunk and the MISP stack](<Screens/Screens/Снимок экрана 2026-10-06 223619.png>)
 ================================================================================
 
 *Figure 1. `docker ps` output.*
