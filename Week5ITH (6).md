@@ -140,7 +140,7 @@ index=windows
 
 ![Figure 9. Query 3, parent processes (table)](<Screens/screen9.png>)
 
-![Figure 10. Query 3, parent processes (bar chart)](<screenshot12.png>)
+![Figure 10. Query 3, parent processes (bar chart)](<screenshott12.png>)
 
 **Result:**
 
