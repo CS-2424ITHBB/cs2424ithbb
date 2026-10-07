@@ -62,7 +62,7 @@ The `splunk` container is running next to the MISP containers:
 The web interface is available at `http://localhost:8000`:
 
 ================================================================================
-![Figure 2. Splunk Enterprise home page](<Screens/Снимок_экрана_2026-10-06_224610.png>)
+![Figure 2. Splunk Enterprise home page](<Screens/screen2.png>)
 ================================================================================
 
 *Figure 2. Splunk home page after login.*
