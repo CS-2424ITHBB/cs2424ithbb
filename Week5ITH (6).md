@@ -156,7 +156,7 @@ No Office or script-host parent (`winword.exe`, `excel.exe`, `wscript.exe`, `msh
 
 *Goal: check which event types the PowerShell log contains, to know if Script Block Logging (4104) is available.*
 
-![Figure 11. Query 4, PowerShell event codes](<Screens/Снимок_экрана_2026-10-06_231558.png>)
+![Figure 11. Query 4, PowerShell event codes](<Screens/screen10.png>)
 
 **Result:** 170,846 events in 14 event types. Most are start and stop markers (4105 and 4106). **Event 4104 (Script Block Logging) is present with 319 events**, which means we can read the code that PowerShell actually ran.
 
