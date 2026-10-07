@@ -103,7 +103,7 @@ The files were copied into the container and ingested into the `windows` index.
 
 *Goal: see every time PowerShell was started and by which parent process.*
 
-![Figure 7. Query 1, all PowerShell launches](<Screens/Снимок_экрана_2026-10-06_230946.png>)
+![Figure 7. Query 1, all PowerShell launches](<Screens/screen7.png>)
 
 **Result: 186 PowerShell launches** on the host `win-dc-974.attackrange.local`. The first rows are already interesting: PowerShell started by `WmiPrvSE.exe` with `/NoProfile /EncodedCommand` and a base64 string. The parameter name is written in many shortened forms (`/EncodedCo`, `/EncodedCom`, `/EncodedComm`, ...).
 
