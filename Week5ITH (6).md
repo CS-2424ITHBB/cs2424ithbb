@@ -138,7 +138,7 @@ index=windows
 
 *Goal: find unusual parent processes (for example Office or script hosts).*
 
-![Figure 9. Query 3, parent processes (table)](<Screens/Снимок_экрана_2026-10-06_231258.png>)
+![Figure 9. Query 3, parent processes (table)](<Screens/screen9.png>)
 
 ![Figure 10. Query 3, parent processes (bar chart)](<Screens/Снимок_экрана_2026-10-06_232155.png>)
 
