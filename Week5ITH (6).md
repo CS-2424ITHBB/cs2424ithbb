@@ -83,13 +83,13 @@ We used the Atomic Red Team data for technique T1059.001 from the public `splunk
 
 The files were copied into the container and ingested into the `windows` index.
 
-![Figure 5. Data ingestion commands](<Screens/Снимок_экрана_2026-10-06_224935.png>)
+![Figure 5. Data ingestion commands](<Screens/screen5.png>)
 
 *Figure 5. Splunk accepted both files (`Oneshot ... added`).*
 
 ### Step 6. Check that the data is there
 
-![Figure 6. Both log sources are in the index](<Screens/Снимок_экрана_2026-10-06_225416.png>)
+![Figure 6. Both log sources are in the index](<Screens/screen6.png>)
 
 *Figure 6. 192,560 events in total, from two sources: PowerShell/Operational (170,846) and Sysmon/Operational (21,714). The time range is set to All time.*
 
