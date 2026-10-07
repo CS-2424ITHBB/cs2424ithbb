@@ -164,7 +164,7 @@ No Office or script-host parent (`winword.exe`, `excel.exe`, `wscript.exe`, `msh
 
 *Goal: search script text for download cradles and base64 decoding.*
 
-![Figure 12. Query 5, suspicious script content](<Screens/Снимок_экрана_2026-10-06_231943.png>)
+![Figure 12. Query 5, suspicious script content](<Screens/screen11.png>)
 
 **Result:** 33 matching events; the top 20 distinct lines were reviewed (next section).
 
