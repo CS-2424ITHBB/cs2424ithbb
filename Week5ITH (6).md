@@ -67,7 +67,7 @@ The web interface is available at `http://localhost:8000`.
 
 All data was stored in a separate index called `windows`.
 
-![Figure 3. Index windows created](<Screens/Снимок_экрана_2026-10-06_224657.png>)
+![Figure 3. Index windows created](<Screens/screen3.png>)
 
 *Figure 3. Splunk confirms: Index "windows" added.*
 
@@ -75,7 +75,7 @@ All data was stored in a separate index called `windows`.
 
 We used the Atomic Red Team data for technique T1059.001 from the public `splunk/attack_data` repository.
 
-![Figure 4. Dataset downloaded](<Screens/Снимок_экрана_2026-10-06_224835.png>)
+![Figure 4. Dataset downloaded](<Screens/screen4.png>)
 
 *Figure 4. Both files downloaded: `sysmon.log` (38 MB) and `powershell.log` (6 MB).*
 
