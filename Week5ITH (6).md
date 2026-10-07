@@ -125,7 +125,7 @@ index=windows
 | sort - count
 ```
 
-![Figure 8. Query 2, suspicious PowerShell command lines](<Screens/Снимок_экрана_2026-10-06_231058.png>)
+![Figure 8. Query 2, suspicious PowerShell command lines](<Screens/screen8.png>)
 
 **Result: 51 matching events in 5 groups.** The two largest groups:
 
