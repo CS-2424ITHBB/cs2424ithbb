@@ -4,7 +4,6 @@ Assignment 2 Week 6 Karabalin Bakhtiyar and Tulepbergen Beksultan
 
 ## Executive Summary
 
-This report studies MITRE ATT&CK technique **T1059 — Command and Scripting Interpreter**, with a focus on the Unix Shell sub-technique (T1059.004), and complements it with an end-to-end simulated post-exploitation sequence executed locally on the Kali Linux VM already used in Weeks 3 and 5. The sequence — discovery, tool transfer, and persistence via cron — was executed manually, logged with `auditd`, and mapped to the MITRE ATT&CK Enterprise matrix. A corresponding layer was built in ATT&CK Navigator to visualize technique coverage. This work extends the PowerShell-focused hunt from Week 5 (T1059.001, Windows) to the Linux/Unix side of the same parent technique.
 
 ----------
 
@@ -26,11 +25,11 @@ T1059 covers adversaries abusing command and script interpreters to execute comm
 | T1059.007 | JavaScript | Cross-platform |
 | T1059.008 | Network Device CLI | Network devices |
 
-This report focuses on **T1059.004 (Unix Shell)**, since the simulation was executed on a Linux (Kali) host, in contrast to Week 5's Windows/PowerShell hunt.
+This report focuses on **T1059.004 (Unix Shell)**, since the simulation was executed on a Linux host, in contrast to Week 5's Windows/PowerShell hunt.
 
 ### 1.3 Relevance and Known Usage
 
-Unix shell abuse is commonly seen after initial access on Linux servers, IoT devices, and cloud instances — including, notably, misconfigured webcamXP and similar embedded devices studied in Weeks 1-2 of this project, where the host operating system can be reached once the web interface is compromised. Numerous threat groups and malware families (e.g., Mirai-derived botnets, various Linux cryptominers) rely on shell commands for reconnaissance, payload retrieval, and persistence.
+Unix shell abuse is commonly seen after initial access on Linux servers, IoT devices, and cloud instances — including, notably, misconfigured webcamXP and similar embedded devices studied in Weeks 1-2 of this project, where the host operating system can be reached once the web interface is compromised. Numerous threat groups and malware families rely on shell commands for reconnaissance, payload retrieval, and persistence.
 
 ### 1.4 Mitigations and Data Sources (per ATT&CK)
 
@@ -41,7 +40,6 @@ Unix shell abuse is commonly seen after initial access on Linux servers, IoT dev
 
 ## 2. ATT&CK Navigator — Brief Overview
 
-The [ATT&CK Navigator](https://mitre-attack.github.io/attack-navigator/) is a web-based tool for visualizing the Enterprise ATT&CK matrix as **layers**: JSON files that assign a score, color, and comment to individual techniques. Layers can be created manually in the UI or authored as JSON and imported directly. For this assignment, a layer (`week6-layer.json`) was created to highlight and annotate every technique exercised during the simulation below.
 
 ================================================================================
 ![alt text](<Screens/navigator_layer.png>)
@@ -106,7 +104,7 @@ ps aux
 A benign public file was downloaded to simulate retrieval of an external tool/payload.
 
 ```bash
-curl -o /tmp/test_payload.sh https://raw.githubusercontent.com/MISP/misp-docker/main/README.md
+curl -o /tmp/test_payload.sh https://raw.githubusercontent.com/MISP/2.4/main/README.md
 cat /tmp/test_payload.sh | head -5
 ```
 
