@@ -54,13 +54,13 @@ output powershell
 ```
 
 ================================================================================
-![alt text](<Screens/week7_fig1.png>)
+![alt text](<Screens/screen71.png>)
 ================================================================================
 
 *Figure 1. MITRE CAR analytic CAR-2014-04-003 (PowerShell Execution) and its ATT&CK coverage.*
 
 ================================================================================
-![alt text](<Screens/week7_fig2.png>)
+![alt text](<Screens/screen72.png>)
 ================================================================================
 
 *Figure 2. Pseudocode and Splunk implementation of the analytic: process-creation events where the image is powershell.exe and the parent is not explorer.exe.*
@@ -74,7 +74,7 @@ output powershell
 The analytic was run in the Splunk Enterprise container from Week 5 on the Kali VM, in the index `windows`, which holds the Atomic Red Team dataset for T1059.001 (Sysmon and PowerShell logs). The time range is set to **All time**, because Splunk shows the loading time, not the original event time.
 
 ================================================================================
-![alt text](<Screens/week7_fig3.png>)
+![alt text](<Screens/screen73.png>)
 ================================================================================
 
 *Figure 3. Splunk container running and healthy on the Kali host.*
@@ -100,7 +100,7 @@ index=windows | rex field=_raw "<EventID>(?<EventID>\d+)</EventID>" | search Eve
 The index contains **406** Sysmon process-creation events, which is the data the analytic requires.
 
 ================================================================================
-![alt text](<Screens/week7_fig4.png>)
+![alt text](<Screens/screen74.png>)
 ================================================================================
 
 *Figure 4. Sysmon process-creation events (EventID 1) in index "windows": 406 events, the data required by the analytic.*
@@ -122,7 +122,7 @@ index=windows
 This returns **186 events**, the same number as in Week 5. It is our baseline, before the CAR parent-process condition is applied.
 
 ================================================================================
-![alt text](<Screens/week7_fig5.png>)
+![alt text](<Screens/screen75.png>)
 ================================================================================
 
 *Figure 5. Baseline: all 186 PowerShell launches in the dataset (no parent-process condition).*
@@ -147,7 +147,7 @@ This is our translation of the CAR pseudocode and of its Splunk version. It retu
 Two small differences from the CAR Splunk query: it matches the path `C:\Windows\*\powershell.exe` and excludes exactly `C:\Windows\explorer.exe`, while we use the wildcards `*powershell.exe` and `*explorer.exe`. Our wildcard is broader and also matches `splunk-powershell.exe`.
 
 ================================================================================
-![alt text](<Screens/week7_fig6.png>)
+![alt text](<Screens/screen76.png>)
 ================================================================================
 
 *Figure 6. CAR logic in Splunk: PowerShell launches whose parent is not explorer.exe (185 events on 3 hosts).*
@@ -174,7 +174,7 @@ index=windows
 The result is **51 events in 5 groups**, about 73% fewer than the 186 baseline. The `splunkd.exe` exclusion did not change the count on this dataset (the forwarder launches do not carry these flags), but it is kept so the detection stays stable if the forwarder starts using such arguments.
 
 ================================================================================
-![alt text](<Screens/week7_fig7.png>)
+![alt text](<Screens/screen77.png>)
 ================================================================================
 
 *Figure 7. Tuned detection: only launches with encoded-command, download-cradle or bypass flags remain (51 events in 5 groups). Splunk forwarder parent excluded.*
@@ -191,13 +191,13 @@ The result is **51 events in 5 groups**, about 73% fewer than the 186 baseline. 
 The tuned search was saved with **Save As, Alert**: title `CAR-2014-04-003 Suspicious PowerShell Launch`, type Scheduled (hourly, at 0 minutes past the hour), trigger when the number of results is greater than 0, trigger for each result, action *Add to Triggered Alerts* with severity High. At this point the analytic becomes an operational detection.
 
 ================================================================================
-![alt text](<Screens/week7_fig8.png>)
+![alt text](<Screens/screen78.png>)
 ================================================================================
 
 *Figure 8. The tuned analytic is saved as a scheduled Splunk alert.*
 
 ================================================================================
-![alt text](<Screens/week7_fig9.png>)
+![alt text](<Screens/screen79.png>)
 ================================================================================
 
 *Figure 9. The alert is registered in Splunk (enabled, private, hourly). No fired events yet, because it runs on a schedule.*
@@ -219,7 +219,7 @@ CAR itself declares only T1059.001. The other three techniques are **not part of
 Note: CAR uses the tactic name *Defense Evasion*, while the newer ATT&CK version in the Navigator shows T1027 under *Stealth*.
 
 ================================================================================
-![alt text](<Screens/week7_fig10.png>)
+![alt text](<Screens/screen80.png>)
 ================================================================================
 
 *Figure 10. ATT&CK Navigator layer: T1059.001, T1027, T1105 and T1047.*
