@@ -92,4 +92,4 @@ The final output is a reusable CTI dataset and a fully functional MISP instance 
 Authors
 
 * Bakhtiyar Karabalin
-* Tulepbergen
+* Beksultan Tulepbergen
