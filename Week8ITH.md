@@ -1,4 +1,4 @@
-Assignment 2 Week 8 Karabalin Bakhtiyar and Tulepbergen Beksultan
+Week 8 Karabalin Bakhtiyar and Tulepbergen Beksultan
 
 # Adversary Emulation Plan (Simple)
 ### Initial Access → Persistence → Collection and Exfiltration
@@ -76,10 +76,3 @@ T1005 (Collect Data) ──► T1560.001 (Archive) ──► T1041 (Exfil over C
 ## 7. Artificial Intelligence Usage
 
 AI was used to help structure this plan and check the ATT&CK mapping. The scenario and final review were done by the project authors.
-
----
-
-## Sources
-
-- MITRE ATT&CK (attack.mitre.org): T1566.001, T1078, T1547.001, T1053.005, T1005, T1560.001, T1071.001, T1041.
-- MITRE CALDERA Documentation (caldera.readthedocs.io).
