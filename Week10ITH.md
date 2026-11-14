@@ -237,15 +237,4 @@ AI was used as a supporting instrument to gather and organize public reporting o
 ## Sources
 
 - MITRE ATT&CK, APT29 (G0016): https://attack.mitre.org/groups/G0016/
-- MITRE ATT&CK campaigns C0023 (Operation Ghost) and C0024 (SolarWinds Compromise): https://attack.mitre.org/campaigns/
-- ESET, *Operation Ghost: The Dukes Aren't Back — They Never Left* (2019).
-- Mandiant / FireEye, *Highly Evasive Attacker Leverages SolarWinds Supply Chain to Compromise Multiple Global Victims With SUNBURST Backdoor* (December 2020).
-- CrowdStrike, *SUNSPOT: An Implant in the Build Process* and *Observations from the StellarParticle Campaign*.
-- Volexity, *Dark Halo Leverages SolarWinds Compromise to Breach Organizations* (December 2020).
-- Microsoft, *Analyzing Solorigate* and *Deep dive into the Solorigate second-stage activation* (December 2020 – January 2021).
-- SolarWinds, *An Investigative Update of the Cyberattack* and SEC filing of 14 December 2020.
-- UK NCSC, *Advisory: APT29 targets COVID-19 vaccine development* (2020).
-- Microsoft Security Response Center, disclosure of 19 January 2024 and Microsoft Threat Intelligence guidance of 25 January 2024 on Midnight Blizzard OAuth abuse.
-- Microsoft Threat Intelligence, *Midnight Blizzard conducts large-scale spear-phishing campaign using RDP files* (29 October 2024).
-- Microsoft, *MagicWeb: NOBELIUM's post-compromise trick to authenticate as anyone* (24 August 2022).
-- Trend Micro, *Earth Koshchei Coopts Red Team Tools in Complex RDP Attacks*.
+  
