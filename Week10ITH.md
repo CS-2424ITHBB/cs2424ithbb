@@ -173,7 +173,7 @@ Since 22 October 2024, Microsoft Threat Intelligence observed Midnight Blizzard 
 
 The official Navigator layer for G0016 can be downloaded from the MITRE page and loaded into ATT&CK Navigator.
 
-![APT29 Navigator layer](Screens/week10_navigator_apt29.png)
+![APT29 Navigator layer](Screens/week10_navigator_apt29.svg)
 
 *Figure 1. ATT&CK Navigator layer for APT29 (G0016).*
 
